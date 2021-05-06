@@ -13,7 +13,7 @@ class App extends Component {
     
   btnClick() {
     //console.log('btn clicked');
-    this.setState({isShow: <p id="para"><p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p></p>});
+    this.setState({isShow: <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>});
   }
     
     render() {
