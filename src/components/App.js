@@ -2,20 +2,26 @@ import React, {Component, useState} from "react";
 import '../styles/App.css';
 
 class App extends Component {
+	state={
+	data:""
+	};
     constructor(props) {
 		super(props);
-	     this.state = {data:""};
+	  
 	};
 	
      
+  btnClick(){
+  
+	this.setState({data:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"});
+  
+  };	
 
     render() {
     	return(
     		<div id="main">
 		       <p id="para">{this.state.data}</p>
-                    <button id="click" onClick={() => this.setState({ data: this.state.data="Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy" })}>
-                  Click me
-                 </button>
+                    <button id="click" onClick={this.btnClick}>Click me</button>
             </div>
     	);
     }
