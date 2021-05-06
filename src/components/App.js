@@ -12,8 +12,11 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
-		      
-    		</div>
+		       <p id="para">{this.state.data}</p>
+                    <button id="click" onClick={() => this.setState({ data: this.state.data="Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy" })}>
+                  Click me
+                 </button>
+            </div>
     	);
     }
 }
