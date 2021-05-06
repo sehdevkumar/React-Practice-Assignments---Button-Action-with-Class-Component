@@ -4,12 +4,15 @@ import '../styles/App.css';
 class App extends Component {
     constructor(props) {
 		super(props);
+	     this.state = {data:""};
 	};
+	
+     
 
     render() {
     	return(
     		<div id="main">
-				{ /* Do not remove this main div!! */ }
+		      
     		</div>
     	);
     }
